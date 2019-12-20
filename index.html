@@ -11,15 +11,28 @@ rps = Math.random();
 function computerPlay() {
 
 	if (rps < .33){
-		console.log ("Rock");
+		return ("Rock");
 	}else if ( rps < .66 ) {
-		console.log ("Paper");
+		return ("Paper");
 	} else {
-		console.log("Scissors");
+		return ("Scissors");
 	}
 }
 
 computerPlay();
+
+let computerAnswer = computerPlay();
+
+console.log(computerAnswer);
+
+let myAnswer = "Rock";
+
+console.log("The computer's answer is " + computerAnswer + " and your answer is " + myAnswer);
+
+
+
+
+
 
 </script>
 
