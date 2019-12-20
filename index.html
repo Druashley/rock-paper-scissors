@@ -30,6 +30,21 @@ let myAnswer = "Rock";
 console.log("The computer's answer is " + computerAnswer + " and your answer is " + myAnswer);
 
 
+switch (computerAnswer){
+	case "Rock":
+		console.log("The computer picked rock and so did you, that is a tie.")
+		break;
+	case "Paper":
+		console.log("The computer picked paper and you picked rock, so the computer wins.")
+		break;
+	case "Scissors":
+		console.log("The computer picked scissors and you picked rock, so you win!")
+		break;
+	default:
+		console.log("someone picked something wrong.")
+}
+
+
 
 
 
