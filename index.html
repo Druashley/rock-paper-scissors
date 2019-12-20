@@ -7,13 +7,19 @@ let rps;
 
 rps = Math.random();
 
-if (rps < .33){
-	computerAnswer = "Rock";
-}else if ( rps < .66 ) {
-	computerAnswer = "Paper";
-} else {
-	computerAnswer = ("Scissors");
+
+function computerPlay() {
+
+	if (rps < .33){
+		console.log ("Rock");
+	}else if ( rps < .66 ) {
+		console.log ("Paper");
+	} else {
+		console.log("Scissors");
+	}
 }
+
+computerPlay();
 
 </script>
 
