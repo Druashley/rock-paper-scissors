@@ -8,43 +8,51 @@ let rps;
 rps = Math.random();
 
 
+
 function computerPlay() {
 
 	if (rps < .33){
 		return ("Rock");
 	}else if ( rps < .66 ) {
-		return ("Paper");
+		return ("Paper" );
 	} else {
 		return ("Scissors");
 	}
 }
 
-computerPlay();
 
 let computerAnswer = computerPlay();
 
 console.log(computerAnswer);
 
-let myAnswer = "Rock";
+let myAnswer = "Scissors";
 
-console.log("The computer's answer is " + computerAnswer + " and your answer is " + myAnswer);
+function nameCheck (var1, var2){
 
-
-switch (computerAnswer){
-	case "Rock":
-		console.log("The computer picked rock and so did you, that is a tie.")
-		break;
-	case "Paper":
-		console.log("The computer picked paper and you picked rock, so the computer wins.")
-		break;
-	case "Scissors":
-		console.log("The computer picked scissors and you picked rock, so you win!")
-		break;
-	default:
-		console.log("someone picked something wrong.")
+	if (var1 == "Rock" && var2 == "Rock") {
+		console.log ("You both picked Rock, you tie");
+	}else if ( var1 == "Paper" && var2 == "Paper") {
+		console.log ("You both picked Paper, you tie")
+	} else if (var1 == "Scissors" && var2 == "Scissors") {
+		console.log ("You both picked Scissors, you tie")
+	} else if ( var1 == "Paper" && var2 == "Rock") {
+		console.log ("You picked Paper and the computer picked Rock, you win!")
+	} else if ( var1 == "Paper" && var2 == "Scissors"){
+		console.log ("You picked Paper and the computer picked Scissors, you lose")
+	} else if (var1 == "Rock" && var2 == "Paper"){
+		console.log ("You picked Rock and the computer picked Paper, you lose")
+	} else if (var1 == "Rock" && var2 == "Scissors"){
+		console.log ("You picked rock and the computer picked Scissors, you win!")
+	} else if (var1 == "Scissors" && var2 == "Paper"){
+		console.log ("You picked Scissors and the computer picked Paper, you win!")
+	} else if (var1 == "Scissors" && var2 == "Rock"){
+		console.log ("You picked Scissors and the computer picked Paper, you lose")
+	} else {
+		console.log ("Someone is cheating.")
+	}
 }
 
-
+nameCheck(myAnswer, computerAnswer);
 
 
 
