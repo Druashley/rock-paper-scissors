@@ -23,9 +23,9 @@ function computerPlay() {
 
 let computerAnswer = computerPlay();
 
-console.log(computerAnswer);
+//console.log(computerAnswer);
 
-let myAnswer = "Scissors";
+let myAnswer = prompt();
 
 function nameCheck (var1, var2){
 
@@ -46,7 +46,7 @@ function nameCheck (var1, var2){
 	} else if (var1 == "Scissors" && var2 == "Paper"){
 		console.log ("You picked Scissors and the computer picked Paper, you win!")
 	} else if (var1 == "Scissors" && var2 == "Rock"){
-		console.log ("You picked Scissors and the computer picked Paper, you lose")
+		console.log ("You picked Scissors and the computer picked Rock, you lose")
 	} else {
 		console.log ("Someone is cheating.")
 	}
